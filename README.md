@@ -34,8 +34,8 @@ To set up your environment, this repository includes an `environment.yml` file t
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/joeletho/Georip.git
-   cd Georip
+   git clone https://github.com/portersonoma/TensorStream.git
+   cd TensorStream
    ```
    
 2. Create the Conda environment using the provided environment.yml:
@@ -50,7 +50,7 @@ This will create a Conda environment with all the required dependencies for runn
 
 To activate the environment, run:
   ```bash
-  conda activate georip
+  conda activate tensorstream
   ```
 
 Once activated, you can start using the provided Jupyter notebooks for dataset creation, model training, prediction, and result visualization.
