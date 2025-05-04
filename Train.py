@@ -7,7 +7,7 @@ def main():
 
     dataset_dir = "C:/QGIS/dataset"
     model_type = "yolov8s-seg.pt"
-    img_size = 640
+    img_size = 1024
     save_dir = "C:/QGIS/runs/segment/train"
     class_names = ["Water", "Road", "PVeg"]
 
@@ -25,11 +25,11 @@ def main():
     model.train(
         data=data_yaml,
         imgsz=img_size,
-        epochs=50,
-        batch=16,
+        epochs=200,
+        batch=14,
         workers=2,
         amp=True,
-        patience=5,
+        patience=10,
         device="cuda",
         save=True,
         save_period=-1,
